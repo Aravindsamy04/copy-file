@@ -29,15 +29,15 @@ To write a program for copying the contents from one file to another file.
 Developed by:P.Aravind samy
 RegisterNumber: 22005040
 
-with open("File1.txt","r") as fp:
-    x = fp.read()
-with open("File2.txt","w") as fp1:
-    fp1.write(x)
+with open("git.txt","r") as f1:
+    with open("MyFile.txt","a") as f2:
+        for line in f1:
+            f2.write(line)
 
 ```
 
 ### OUTPUT:
-![output](/op.png)
+![output](/copy.png)
 
 
 ## RESULT:
